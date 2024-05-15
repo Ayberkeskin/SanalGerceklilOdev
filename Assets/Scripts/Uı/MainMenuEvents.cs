@@ -3,12 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class MainMenuEvents : MonoBehaviour
 {
-    private int _sound = 0;
-    private int _vibration = 0;
-    
     private UIDocument _document;
     
     private Button _startButton;
@@ -18,6 +16,9 @@ public class MainMenuEvents : MonoBehaviour
     private Button _soundButton;
     private Button _vibrationButton;
     private Button _backButton;
+    
+    private int _sound = 0;
+    private int _vibration = 0;
     
     private void Awake()
     {
@@ -57,7 +58,7 @@ public class MainMenuEvents : MonoBehaviour
     private void OnPlayGameClick(ClickEvent evt)
     {
         Debug.Log("Oyun ekranı");
-       
+        SceneManager.LoadScene(1);
     }
 
     private void OnSettingsClick(ClickEvent evt)
@@ -123,9 +124,6 @@ public class MainMenuEvents : MonoBehaviour
         _soundButton.style.display = DisplayStyle.Flex;
         _vibrationButton.style.display = DisplayStyle.Flex;
         _backButton.style.display = DisplayStyle.Flex;
-
-
-
     }
     
     

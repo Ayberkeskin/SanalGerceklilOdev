@@ -1,0 +1,22 @@
+.icon {
+    font-size: 14px;
+    -unity-text-align: upper-center;
+    width: 110px;
+    height: 110px;
+    background-image: url("project://database/Assets/Art/Assets/Icons/iconsv2.png?fileID=-857974976&guid=cff8927987ca3bc4ab2ecce04ea61772&type=3#iconsv2_0");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    flex-basis: auto;
+    flex-direction: column;
+    align-items: stretch;
+    position: absolute;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.text {
+    -unity-font: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=47f59c086d9438f44a456dd5540094b1&type=3#NotInter-Regular");
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
