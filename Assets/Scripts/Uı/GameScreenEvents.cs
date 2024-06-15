@@ -11,7 +11,6 @@ public class GameScreenEvents : MonoBehaviour
     private Button _settingsButton;
     private Button _playButton;
     
-    
     private Button _soundButton;
     private Button _vibrationButton;
     private Button _backButton;
@@ -19,9 +18,6 @@ public class GameScreenEvents : MonoBehaviour
     
     private Button _menuButton;
     private Button _menuBackButton;
-    
-    
-    
     
     private int _sound = 0;
     private int _vibration = 0;
@@ -54,9 +50,7 @@ public class GameScreenEvents : MonoBehaviour
         
         _menuButton.RegisterCallback<ClickEvent>(OnMenuClick);
         _menuBackButton.RegisterCallback<ClickEvent>(OnMarketBackClick);
-        
-        
-    
+
     }
     
     private void OnDisable()
