@@ -8,14 +8,12 @@ public class DragAndDrop : MonoBehaviour
 {
     public GameObject SelectedPiece;
     private int OIL = 1;
-    void Start()
-    {
-        
-    }
-    
+    public bool isPause=false;
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!isPause)
+        {
+            if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.transform != null && hit.transform.CompareTag("Puzzle"))
@@ -47,5 +45,5 @@ public class DragAndDrop : MonoBehaviour
         }
     
     }
-    
+    }
 }

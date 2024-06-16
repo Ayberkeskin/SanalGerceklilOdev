@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/GameSceneStyle.uss?fileID=7433441132597879392&amp;guid=527299cf81239c944aad434d89c776ce&amp;type=3#GameSceneStyle" />
+    <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=3af4eca212632fb4caf67e8e69f024b3&amp;type=3#MainMenuStyle" />
+    <ui:GroupBox style="height: 15%; -unity-background-image-tint-color: rgb(0, 0, 0); background-color: rgba(255, 255, 255, 0); background-image: none; transform-origin: top; top: auto; position: relative; width: 100%;">
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Ayarlar" class="icon" style="background-color: rgba(118, 106, 106, 0); -unity-background-scale-mode: scale-to-fit; border-left-color: rgba(180, 180, 180, 0); border-right-color: rgba(180, 180, 180, 0); border-top-color: rgba(180, 180, 180, 0); border-bottom-color: rgba(180, 180, 180, 0); left: 90%; background-image: url(&quot;project://database/Assets/Art/Assets/Icons/settings_3524636.png?fileID=21300000&amp;guid=5f8f6b08b9e0a204ba20b2c35af76ce7&amp;type=3#settings_3524636&quot;); -unity-text-align: upper-left;" />
+    </ui:GroupBox>
+    <ui:GroupBox name="GroupBox" style="width: 100%; height: 60%; display: flex; visibility: visible; overflow: hidden; top: auto; background-color: rgba(255, 255, 255, 0);">
+        <ui:Button text="Ses:On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Sound" class="button" style="visibility: visible; margin-top: 36px; display: none;" />
+        <ui:Button text="Titreşim:On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Vibration" class="button" style="visibility: visible; display: none;" />
+        <ui:Button text="Kapat" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Back" class="button" style="visibility: visible; display: none; overflow: visible;" />
+        <ui:Button text="Main Menü" parse-escape-sequences="false" display-tooltip-when-elided="true" name="Anamenu" class="button" style="visibility: visible; display: none; overflow: visible;" />
+        <ui:Button text="Main Menü" parse-escape-sequences="false" display-tooltip-when-elided="true" name="Bitti" class="button" style="visibility: visible; display: none; overflow: visible; left: 25%; top: 60%;" />
+    </ui:GroupBox>
+</ui:UXML>
