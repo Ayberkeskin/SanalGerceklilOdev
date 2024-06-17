@@ -1328,6 +1328,8 @@ namespace Mirror
         }
 
         bool hadAuthority;
+        public bool hasAuthority;
+
         internal void NotifyAuthority()
         {
             if (!hadAuthority && isOwned)
